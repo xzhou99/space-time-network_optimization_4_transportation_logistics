@@ -1,0 +1,2 @@
+scenario_no,scenario_name,number_of_assignment_days,number_of_statistics_reporting_days,traffic_flow_model,signal_representation_model,traffic_assignment_method,demand_multiplier,random_seed,ODME_start_iteration,ODME_max_percentage_deviation_wrt_hist_demand,ODME_step_size,freeway_bias_factor,ue_gap_calculation_method,calibration_data_start_time_in_min,calibration_data_end_time_in_min,routing_movement_delay_mode
+1,test1,50,1,3,0,3,1,100,5,1000,0.5,1,0,0,60,0

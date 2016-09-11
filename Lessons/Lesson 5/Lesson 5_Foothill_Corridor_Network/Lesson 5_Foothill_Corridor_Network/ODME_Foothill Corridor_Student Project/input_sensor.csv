@@ -1,0 +1,2 @@
+sensor_id,x_coord,y_coord,from_node_id,to_node_id,day_no,unix_timestamp,start_time_in_min,end_time_in_min,sensor_type,direction,count,occupancy,travel_time,avg_speed
+109,,,,,1,1/1/2010 0:00,990,1050,link_count,1,99,,,

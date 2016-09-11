@@ -1,0 +1,115 @@
+[simulation]
+use_default_lane_capacity=0
+stochatic_capacity_mode=1
+merge_node_model=1
+first_in_first_out_condition_across_different_movements=0
+minimum_link_in_flow_ratio= 0.02
+max_density_ratio_for_loading_vehicles= 0.80
+cycle_length_in_seconds=120.00
+default_saturation_flow_rate_in_vehphpl=1800.00
+random_number_seed=100
+relax_minimum_link_in_flow_ratio_after_time=60.00
+point_queue_model_after_time=60.00
+additional_amber_time_per_link_per_cycle=4
+use_freeval_merge_model=0
+use_saturation_flow_rate_as_capacity_for_link_with_no_control_downstream_node=1
+output_link_capacity_file=0
+output_link_capacity_start_time_in_min=0
+output_link_capacity_end_time_in_min=300
+use_point_queue_for_on_ramps=1
+use_point_queue_for_off_ramps=1
+sumulate_signal_cycle_length=1
+use_point_queue_model_x_min_after_demand_loading_period=60.00
+use_mile_or_km_as_length_unit=1
+ramdomized_capacity=0
+capcaity_loading_factor=1
+[emission]
+output_opreating_mode_data=0
+target_vehicle_id_for_output_second_by_second_emission_data=0
+output_emission_data=0
+[assignment]
+agent_based_assignment=0
+number_of_inner_iterations=0
+convergency_relative_gap_threshold_percentage= 5.00
+UE_assignment_method=1
+day_to_day_agent_learning_method=0
+departure_time_choice_early_delay_penalty= 0.97
+departure_time_choice_late_delay_penalty= 1.31
+learning_percentage=15
+travel_time_difference_for_switching_in_min=5
+agregation_time_interval_in_min=15
+aggregation_time_interval_in_min=15
+relative_travel_time_difference_in_percentage_for_switching_in_min=15.00
+relative_travel_time_difference_in_percentage_for_switching_in_percentage=15.00
+use_routing_policy_from_external_input=0
+use_link_travel_time_from_external_input=0
+use_link_travel_time_from_external_input_gain_factor= 0.50
+[output]
+start_iteration_for_MOE=-1
+simulation_data_horizon_in_min=1350
+version_number= 1.00
+OD_path_MOE_file=0
+OD_path_MOE_cutoff_volume=1
+TDLinkMOE_aggregation_time_interval_in_min=1
+time_dependent_RoutingPolicy_file=0
+time_dependent_ODMOE_file=0
+time_dependent_skim_aggregation_time_interval_in_min=30
+[traveler_information]
+coefficient_of_variation_of_historical_info_travelers_perception_error= 0.30
+coefficient_of_variation_of_pretrip_info_travelers_perception_error= 0.05
+coefficient_of_variation_of_en-route_info_travelers_perception_error= 0.05
+coefficient_of_variation_of_VMS_perception_error= 0.05
+information_updating_interval_of_en_route_info_travelers_in_min=5
+information_updating_interval_of_VMS_in_min=60
+information_updating_interval_in_min=5
+[input_checking]
+allow_extremely_low_capacity=1
+[safety_planning]
+default_AADT_conversion_factor=0.10000
+[GUI]
+long_lat_coordinate_flag=1.00000
+node_display_size=50.00
+node_text_display_ratio=4.000000
+[BackgroundImage]
+x1=0.000000
+y1=0.000000
+ImageWidth=0.000000
+ImageHeight=0.000000
+ImageXResolution=0.000000
+ImageYResolution=0.000000
+[demand]
+loading_start_hour=6.00000
+loading_end_hour=12.00000
+[version_control]
+revision_number= 2.00
+[estimation]
+updated_demand_print_out_threshold= 5.00
+[debug]
+simulation_log_level=0
+emission_log_level=0
+ODME_log_level=0
+ABM_log_level=0
+[shortest_path]
+max_size_of_adjacent_links=30
+travel_time_aggregation_interval_in_min=15
+[system_optimal_assignment]
+re_routing_start_time_in_min=0
+[network_design]
+number_of_links_to_be_built=1
+travel_time_budget_in_min=12
+[computation]
+max_number_of_threads_for_real_time_routing=1
+max_number_of_threads_to_be_used=8
+[ABM_integeration]
+time_dependent_skim_file_output=0
+time_dependent_HOV_skim_file_output=0
+[ABM_integration]
+RT_Input_LinkAttribute_Frequency_in_Seconds=0
+RT_Input_Agent_Frequency_in_Seconds=0
+RT_Input_Routing_Policy_Frequency_in_Seconds=0
+RT_Output_LinkMOE_Frequency_in_Seconds=0
+RT_Output_TDODMOE_in_Seconds=0
+RT_Output_Complete_Agent_Frequency_in_Seconds=0
+RT_Output_Tagged_Agent_Frequency_in_Seconds=0
+day_by_day_output=0
+day_by_day_output_starting_iteration=100
