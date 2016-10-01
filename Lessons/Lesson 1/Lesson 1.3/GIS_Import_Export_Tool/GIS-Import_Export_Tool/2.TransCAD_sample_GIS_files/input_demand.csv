@@ -1,0 +1,3 @@
+from_zone_id,to_zone_id,number_of_trips_demand_type1
+1,2,30.369238
+2,1,61.23941
