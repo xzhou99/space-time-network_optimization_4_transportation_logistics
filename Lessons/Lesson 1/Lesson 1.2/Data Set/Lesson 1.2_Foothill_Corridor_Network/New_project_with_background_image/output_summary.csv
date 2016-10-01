@@ -1,0 +1,152 @@
+DTALite:
+A Fast Open Source DTA Engine
+Software Version =,1.1.0
+Release Date=,May  4 2016
+Simulation Date =,year: 2016,month:09,day:30,hour:12,min:54
+----------------------test1----------------------
+Signal Control Representation =,Continuous Flow with Link Capacity Constraint
+Traffic Flow Model =,Point Queue Model
+ 
+
+User Defined Assignment Intervals==,28
+
+# of Nodes=,7
+# of Link Types=,12
+# of Links=,6
+# of Prohibited Movements=,0
+# of Pretimed Signals=,0
+# of Actuated Signals=,0
+# of Zones=,2
+# of Activity Locations=,2
+# of Vehicle Types=,5
+# of Demand Types=,4
+# of Sensor Records=,0
+Demand Load Mode=,demand meta databaseReading demand file,input_demand.csv,cumulative # of agents=,125,
+
+
+Demand multiplier in input_scenario_settings.csv file=,1
+# of Vehicles to be simulated=,14
+# of Intra-zone Vehicles (not be simulated)=,29.9659
+Starting Time of Demand Loading (min)=,930
+Ending Time of Demand Loading (min)=,1050
+Output Emission data=,YES
+Output second by second speed data=,NO
+Vehicle ID with second by second speed data=,0
+
+--Link Type Statistics--
+link_type,link_type_name,link_type_code,number_of_links,avg_lane_capacity,avg_number_of_lanes,avg_speed_limit,avg_link_length,avg_K_jam,total_link_length,
+1,Freeway,f,6,1900,1,65,0.108333,180,0.65,
+2,Highway,h,0,0,0,0,0,0,0,
+3,Principal arterial,a,0,0,0,0,0,0,0,
+4,Major arterial,a,0,0,0,0,0,0,0,
+5,Minor arterial,a,0,0,0,0,0,0,0,
+6,Collector,a,0,0,0,0,0,0,0,
+7,Local,a,0,0,0,0,0,0,0,
+8,Frontage road,a,0,0,0,0,0,0,0,
+9,Ramp,r,0,0,0,0,0,0,0,
+10,Zonal connector,c,0,0,0,0,0,0,0,
+100,Transit link,t,0,0,0,0,0,0,0,
+200,Walking link,w,0,0,0,0,0,0,0,
+# of demand type code based toll records=0
+# of link-based toll records=0
+# of work zone records=0
+# of VMS records=0
+Assignment method=,Zone-based routing
+Iteration #,CPU Running Time,Per Iteration CPU Running Time,# of agents,Avg Travel Time (min),Avg Waiting Time at Origin (min),Avg Trip Time Index=(Mean TT/Free-flow TT),Avg Distance,Avg Speed,Avg CO (g),% considering to switch,% switched,% completing trips,network clearance time (in min),Avg User Equilibirum (UE) gap (min),Relative UE gap (%),ODME: number of data points,ODME: Absolute link count error,ODME: % link count error,ODME: slope =observed/estimated link count,ODME: r_squared link count,travel_time_15:30,travel_time_15:45,travel_time_16:00,travel_time_16:15,travel_time_16:30,travel_time_16:45,travel_time_17:00,travel_time_17:15,Avg UE gap_15:30,Avg UE gap_15:45,Avg UE gap_16:00,Avg UE gap_16:15,Avg UE gap_16:30,Avg UE gap_16:45,Avg UE gap_17:00,Avg UE gap_17:15,Relative UE gap_15:30,Relative UE gap_15:45,Relative UE gap_16:00,Relative UE gap_16:15,Relative UE gap_16:30,Relative UE gap_16:45,Relative UE gap_17:00,Relative UE gap_17:15,
+1,00:00:05,00:00:05,14,0.599976,0,0.999959,0.65,65.0026,643.669,100,100,100,1440, , , , , , , ,0.599976,0.599976,0.599976,0.599976,0.599976,0.599976,0.599976,0.599976, , , , , , , , , , , , , , , , ,
+
+
+--Time Dependent Network MOE--,60 min interval
+time_stamp_in_min,time_clock,cumulative_in_flow_count,cumulative_out_flow_count,number_vehicles_in_network,number_vehicles_entering_network,total_vehicle_mile_traveled,avg_trip_time (departure_time_based),avg_trip_time_index = trip time/FFTT,avg_distance,avg_speed,
+900,15:00,0,0,0,0,1.95,0.599976,0.999959,0.65,65.0026,
+
+--Time Dependent Network MOE--,30 min interval
+time_stamp_in_min,time_clock,cumulative_in_flow_count,cumulative_out_flow_count,number_vehicles_in_network,number_vehicles_entering_network,total_vehicle_mile_traveled,avg_trip_time (departure_time_based),avg_trip_time_index = trip time/FFTT,avg_distance,avg_speed,
+930,15:30,0,0,0,0,1.95,0.599976,0.999959,0.65,65.0026,
+
+--Time Dependent Network MOE--,15 min interval
+time_stamp_in_min,time_clock,cumulative_in_flow_count,cumulative_out_flow_count,number_vehicles_in_network,number_vehicles_entering_network,total_vehicle_mile_traveled,avg_trip_time (departure_time_based),avg_trip_time_index = trip time/FFTT,avg_distance,avg_speed,
+930,15:30,0,0,0,0,0.65,0.599976,0.999959,0.65,39,
+
+--Time Dependent Network MOE--,5 min interval
+time_stamp_in_min,time_clock,cumulative_in_flow_count,cumulative_out_flow_count,number_vehicles_in_network,number_vehicles_entering_network,total_vehicle_mile_traveled,avg_trip_time (departure_time_based),avg_trip_time_index = trip time/FFTT,avg_distance,avg_speed,
+930,15:30,0,0,0,0,0,0,0,0,0,
+Unit of output:
+travel time=,min
+travel Cost=,dollar
+distance=,miles
+speed=,mph
+energy=,1000 joule
+CO2=,gram
+
+
+--MOE Group 1--
+ , , , , , , , , , , , , , , , , , , , ,
+,#_of_vehicles,avg_distance,avg_travel_time,avg_speed,avg_toll_cost,avg_energy_K_joule,avg_CO2_gram,avg_NOX_gram,avg_CO_gram,avg_HC_gram,avg_PM_gram,avg_PM2_5_gram,avg_energy_K_joule_per_mile,avg_CO2_gram_per_mile,avg_NOX_gram_per_mile,avg_CO_gram_per_mile,avg_HC_gram_per_mile,avg_PM_gram_per_mile,avg_PM2_5_gram_per_mile,avg_MilesPerGallon,
+network,14,0.65,0.599976,39,0,0,0,0,597.693,0,0,0,0,0,0,919.528,0,0,0,0,
+
+
+--MOE Group 2--
+ , , , , , , , , , , , , , , , , , , , ,
+,#_of_vehicles,avg_distance,avg_travel_time,avg_speed,avg_toll_cost,avg_energy_K_joule,avg_CO2_gram,avg_NOX_gram,avg_CO_gram,avg_HC_gram,avg_PM_gram,avg_PM2_5_gram,avg_energy_K_joule_per_mile,avg_CO2_gram_per_mile,avg_NOX_gram_per_mile,avg_CO_gram_per_mile,avg_HC_gram_per_mile,avg_PM_gram_per_mile,avg_PM2_5_gram_per_mile,avg_MilesPerGallon,
+sov,14,0.65,0.599976,39,0,0,0,0,597.693,0,0,0,0,0,0,919.528,0,0,0,0,
+hov,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+truck,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+intermodal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+
+
+--MOE Group 3--
+ , , , , , , , , , , , , , , , , , , , ,
+,#_of_vehicles,avg_distance,avg_travel_time,avg_speed,avg_toll_cost,avg_energy_K_joule,avg_CO2_gram,avg_NOX_gram,avg_CO_gram,avg_HC_gram,avg_PM_gram,avg_PM2_5_gram,avg_energy_K_joule_per_mile,avg_CO2_gram_per_mile,avg_NOX_gram_per_mile,avg_CO_gram_per_mile,avg_HC_gram_per_mile,avg_PM_gram_per_mile,avg_PM2_5_gram_per_mile,avg_MilesPerGallon,
+passenger_car,14,0.65,0.599976,39,0,0,0,0,597.693,0,0,0,0,0,0,919.528,0,0,0,0,
+passenger_truck,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+light_commercial,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+single_unit_long_truck,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+combination_long_truck,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+
+
+--MOE Group 4--
+ , , , , , , , , , , , , , , , , , , , ,
+,#_of_vehicles,avg_distance,avg_travel_time,avg_speed,avg_toll_cost,avg_energy_K_joule,avg_CO2_gram,avg_NOX_gram,avg_CO_gram,avg_HC_gram,avg_PM_gram,avg_PM2_5_gram,avg_energy_K_joule_per_mile,avg_CO2_gram_per_mile,avg_NOX_gram_per_mile,avg_CO_gram_per_mile,avg_HC_gram_per_mile,avg_PM_gram_per_mile,avg_PM2_5_gram_per_mile,avg_MilesPerGallon,
+OD1,14,0.65,0.599976,39,0,0,0,0,597.693,0,0,0,0,0,0,919.528,0,0,0,0,
+OD2,14,0.65,0.599976,39,0,0,0,0,597.693,0,0,0,0,0,0,919.528,0,0,0,0,
+
+
+--MOE Group 5--
+ , , , , , , , , , , , , , , , , , , , ,
+,#_of_vehicles,avg_distance,avg_travel_time,avg_speed,avg_toll_cost,avg_energy_K_joule,avg_CO2_gram,avg_NOX_gram,avg_CO_gram,avg_HC_gram,avg_PM_gram,avg_PM2_5_gram,avg_energy_K_joule_per_mile,avg_CO2_gram_per_mile,avg_NOX_gram_per_mile,avg_CO_gram_per_mile,avg_HC_gram_per_mile,avg_PM_gram_per_mile,avg_PM2_5_gram_per_mile,avg_MilesPerGallon,
+link_48_41_ NB freeway,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+link_39_44_NB freeway,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+
+
+--MOE Group 6--
+ , , , , , , , , , , , , , , , , , , , ,
+,#_of_vehicles,avg_distance,avg_travel_time,avg_speed,avg_toll_cost,avg_energy_K_joule,avg_CO2_gram,avg_NOX_gram,avg_CO_gram,avg_HC_gram,avg_PM_gram,avg_PM2_5_gram,avg_energy_K_joule_per_mile,avg_CO2_gram_per_mile,avg_NOX_gram_per_mile,avg_CO_gram_per_mile,avg_HC_gram_per_mile,avg_PM_gram_per_mile,avg_PM2_5_gram_per_mile,avg_MilesPerGallon,
+'Path1_Major freeway route,14,0.65,0.599976,39,0,0,0,0,597.693,0,0,0,0,0,0,919.528,0,0,0,0,
+
+
+--MOE Group 7--
+Detailed Data:,output_NetworkTDMOE.csv
+time_stamp_in_min,cumulative_in_flow_count,cumulative_out_flow_count,number_of_vehicles_in_network,flow_in_a_min,avg_trip_time_in_min
+930,0,0,0,0,0,
+931,0,0,0,0,0,
+932,0,0,0,0,0,
+933,0,0,0,0,0,
+934,0,0,0,0,0,
+935,0,0,0,0,0,
+936,0,0,0,0,0,
+937,0,0,0,0,0,
+938,1,1,0,1,0.599976,
+939,1,1,0,0,0,
+940,1,1,0,0,0,
+941,1,1,0,0,0,
+
+
+--MOE Group 8--
+Detailed Data:,output_LinkMOE.csv
+from_node_id,to_node_id,type_code,link_type,link_length,start_time_in_min,end_time_in_min,total_link_volume,lane_capacity_in_vhc_per_hour,link_capacity_in_vhc_per_hour,volume_over_capacity_ratio,avg_waiting_time_on_loading_buffer_(min), speed_limit,speed,free-flow_travel_time,travel_time,percentage_of_speed_limit, level_of_service, sensor_data_flag, sensor_link_volume, simulated_link_volume, measurement_error, abs_measurement_error_percentage, simulated_AADT, TotalEnergy_(J / hr), CO2_(g / hr), NOX_(g / hr), CO_(g / hr), HC_(g / hr, PM_(g / hr), PM_2_5(g / hr),sov_volume, hov_volume, truck_volume, intermodal_volume,passenger car,passenger truck,light commercial truck,single unit short-haul truck,combination long-haul truck,geometry, from_node_id,to_node_id,vol_h1,vol_h2,vol_h3,vol_h4,vol_h5,vol_h6,vol_h7,vol_h8,vol_h9,vol_h10,vol_h11,vol_h12,vol_h13,vol_h14,vol_h15,vol_h16,vol_h17,vol_h18,vol_h19,vol_h20,vol_h21,vol_h22,vol_h23,vol_h24,speed_h1,speed_h2,speed_h3,speed_h4,speed_h5,speed_h6,speed_h7,speed_h8,speed_h9,speed_h10,speed_h11,speed_h12,speed_h13,speed_h14,speed_h15,speed_h16,speed_h17,speed_h18,speed_h19,speed_h20,speed_h21,speed_h22,speed_h23,speed_h24,vol_d1,spd_d1,
+
+
+--MOE Group 9--
+Detailed Data:,output_ODMOE.csv
+from_zone_id,to_zone_id,number_of_agents,number_of_agents_completing_trips,trip_time_in_min,distance

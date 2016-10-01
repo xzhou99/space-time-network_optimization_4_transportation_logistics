@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Traffic Simulation Data</name>
+<Style id="green">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7d00ff00</color>
+</PolyStyle>
+</Style>
+<Style id="red">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7d0000ff</color>
+</PolyStyle>
+</Style>
+<Style id="blue">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7dff0000</color>
+</PolyStyle>
+</Style>
+<Style id="yellow">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7d00ffff</color>
+</PolyStyle>
+</Style>
+<Style id="color1">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c00ff00</color>
+</PolyStyle>
+</Style>
+<Style id="color2">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c75faff</color>
+</PolyStyle>
+</Style>
+<Style id="color3">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c00faff</color>
+</PolyStyle>
+</Style>
+<Style id="color4">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c00d8ff</color>
+</PolyStyle>
+</Style>
+<Style id="color5">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c0099ff</color>
+</PolyStyle>
+</Style>
+<Style id="color6">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c0000ff</color>
+</PolyStyle>
+</Style>
+<Style id="no_control_node">
+<BalloonStyle>
+<displayMode>hide</displayMode>
+</BalloonStyle>
+</Style><Style id="signal_node">      <IconStyle>        <Icon>          <href>http://maps.google.com/mapfiles/kml/paddle/red-stars.png</href>        </Icon>      </IconStyle>    </Style><Folder><name>Node Layer</name> 
+		<visibility>0</visibility>
+<Schema name="node" id="node">
+<SimpleField name="Description" type="string"></SimpleField>
+<SimpleField name="Name" type="string"></SimpleField>
+<SimpleField name="node_id" type="int"></SimpleField>
+<SimpleField name="control_type" type="string"></SimpleField>
+</Schema>
+<Placemark id="Node1">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 1</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">1</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>-111.845202,40.758446</coordinates></Point>
+</Placemark>
+<Placemark id="Node2">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 2</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">2</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>-111.835577,40.757351</coordinates></Point>
+</Placemark>
+<Placemark id="Node3">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 3</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">3</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>-111.830491,40.750856</coordinates></Point>
+</Placemark>
+<Placemark id="Node4">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 4</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">4</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>-111.830413,40.745692</coordinates></Point>
+</Placemark>
+<Placemark id="Node5">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 5</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">5</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>-111.827049,40.741702</coordinates></Point>
+</Placemark>
+<Placemark id="Node6">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 6</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">6</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>-111.820398,40.733720</coordinates></Point>
+</Placemark>
+<Placemark id="Node7">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 7</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">7</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>-111.838238,40.758368</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>Link Layer</name> 
+<Schema name="link" id="link">
+<SimpleField name="Description" type="string"></SimpleField>
+<SimpleField name="Name" type="string"></SimpleField>
+<SimpleField name="from_node_id" type="int"></SimpleField>
+<SimpleField name="to_node_id" type="int"></SimpleField>
+<SimpleField name="link_id" type="int"></SimpleField>
+<SimpleField name="link_length" type="float"></SimpleField>
+<SimpleField name="number_of_lanes" type="int"></SimpleField>
+<SimpleField name="speed_limit_mph" type="float"></SimpleField>
+<SimpleField name="capacity_per_lane_per_hour" type="float"></SimpleField>
+<SimpleField name="capacity_per_link_per_hour" type="float"></SimpleField>
+<SimpleField name="free_flow_travel_time_(min)" type="float"></SimpleField>
+</Schema>
+<Placemark id="Link1">
+<name>Link </name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">7</SimpleData>
+<SimpleData name="to_node_id">2</SimpleData>
+<SimpleData name="link_id">1</SimpleData>
+<SimpleData name="link_length_"> 0.11</SimpleData>
+<SimpleData name="number_of_lanes">1</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1900.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">1900.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 0.10</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link2">
+<name>Link </name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">2</SimpleData>
+<SimpleData name="to_node_id">3</SimpleData>
+<SimpleData name="link_id">2</SimpleData>
+<SimpleData name="link_length_"> 0.11</SimpleData>
+<SimpleData name="number_of_lanes">1</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1900.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">1900.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 0.10</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link3">
+<name>Link </name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">3</SimpleData>
+<SimpleData name="to_node_id">4</SimpleData>
+<SimpleData name="link_id">3</SimpleData>
+<SimpleData name="link_length_"> 0.11</SimpleData>
+<SimpleData name="number_of_lanes">1</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1900.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">1900.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 0.10</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link4">
+<name>Link </name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">4</SimpleData>
+<SimpleData name="to_node_id">5</SimpleData>
+<SimpleData name="link_id">4</SimpleData>
+<SimpleData name="link_length_"> 0.11</SimpleData>
+<SimpleData name="number_of_lanes">1</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1900.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">1900.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 0.10</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link5">
+<name>Link </name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">5</SimpleData>
+<SimpleData name="to_node_id">6</SimpleData>
+<SimpleData name="link_id">5</SimpleData>
+<SimpleData name="link_length_"> 0.11</SimpleData>
+<SimpleData name="number_of_lanes">1</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1900.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">1900.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 0.10</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link6">
+<name>Link </name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">1</SimpleData>
+<SimpleData name="to_node_id">7</SimpleData>
+<SimpleData name="link_id">6</SimpleData>
+<SimpleData name="link_length_"> 0.11</SimpleData>
+<SimpleData name="number_of_lanes">1</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1900.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">1900.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 0.10</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+</Folder>
+<Folder><name>Zone Layer</name> 
+<Placemark id="Zone_1">
+		<name>Zone 1</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_2">
+		<name>Zone 2</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_3">
+		<name>Zone 3</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_4">
+		<name>Zone 4</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_5">
+		<name>Zone 5</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_6">
+		<name>Zone 6</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Folder>
+<Folder><name>Work Zone Layer</name> 
+</Folder>
+<Folder><name>Variable Message Sign</name> 
+</Folder>
+<Folder><name>Traffic Detector</name> 
+</Folder>
+<Folder><name>Node Bottleneck</name> 
+</Folder>
+<Folder>
+<name>Link MOE Layer</name>
+ <visibility>0</visibility>
+<ScreenOverlay>
+<name>Speed Legend Logo</name>
+<drawOrder>20000001</drawOrder>
+ <Icon>
+<href>legend_link_speed.png</href>
+ </Icon>
+<overlayXY x="1.0" y="0.0" xunits="fraction" yunits="fraction"/>
+<screenXY x="0.2" y="0.05" xunits="fraction" yunits="fraction"/>
+ </ScreenOverlay>
+</Folder>
+<Folder>
+<name>Impacted Volume Layer</name>
+ <visibility>0</visibility>
+</Folder>
+<Folder><name>Summary</name> 
+		<visibility>1</visibility>
+<ScreenOverlay>
+<name>Logo</name>
+<drawOrder>20000000</drawOrder>
+ <Icon>
+<href>Logo.png</href>
+ </Icon>
+<overlayXY x="1.0" y="0.0" xunits="fraction" yunits="fraction"/>
+<screenXY x="0.8" y="0.05" xunits="fraction" yunits="fraction"/>
+ </ScreenOverlay>
+</Folder>
+</Document>
+</kml>

@@ -1,0 +1,27 @@
+link_type,link_type_name,type_code,default_lane_capacity,default_speed_limit,default_number_of_lanes,travel_time_bias_factor,approximate_cycle_length_in_second,saturation_flow_rate_in_vhc_per_hour_per_lane
+1,Centroid connector/local,c,10000.000000,0,0.0000,1.0000
+2,Principle arterial,a,930.000000,0,0.0000,1.0000
+3,Minor arterial,a,857.000000,0,0.0000,1.0000
+4,Major collector,a,666.000000,0,0.0000,1.0000
+5,Minor collector,c,515.000000,0,0.0000,1.0000
+9,Innovative intersection/cross street,h,821.000000,0,0.0000,1.0000
+10,Innovative intersection/primary street,a,1003.000000,0,0.0000,1.0000
+11,High speed multilane highway,h,912.000000,0,0.0000,1.0000
+22,Rural highway/principal arterial,a,773.000000,0,0.0000,1.0000
+23,Rural highway/minor arterial,a,773.000000,0,0.0000,1.0000
+24,Rural highway/collector,a,773.000000,0,0.0000,1.0000
+29,Freeway/system loop ramp,f,1758.000000,0,0.0000,1.0000
+30,Freeway/lower speed/higher access CD roads,f,1070.000000,0,0.0000,1.0000
+31,Freeway/lower capacity,f,1920.000000,0,0.0000,1.0000
+32,Freeway/higher capacity,f,2095.000000,0,0.0000,1.0000
+33,Freeway/high speed CD,f,1758.000000,0,0.0000,1.0000
+34,Freeway/HOV lanes,f,2280.000000,0,0.0000,1.0000
+35,Freeway/rural/high speed,f,1920.000000,0,0.0000,1.0000
+36,Freeway/on ramp,f,650.000000,0,0.0000,1.0000
+37,Freeway/off ramp,f,981.000000,0,0.0000,1.0000
+38,Freeway/Managed lane access,f,2280.000000,0,0.0000,1.0000
+39,Freeway/Toll lanes,f,2280.000000,0,0.0000,1.0000
+40,Freeway/tollway,f,2280.000000,0,0.0000,1.0000
+42,One way couplet/principal,f,1116.000000,0,0.0000,1.0000
+43,One way couplet/minor,f,1028.000000,0,0.0000,1.0000
+44,One way couplet/collector,f,799.000000,0,0.0000,1.0000

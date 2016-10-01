@@ -1,0 +1,7 @@
+The following zones have no activity location but have demand being defined in OD demand files.
+2
+3
+4
+5
+6
+Please check input_activity_location.csv and demand files.You might need to manually prepare zone - to - node mapping in file input_activity_location file to ensure each zone has at least one activity node. Please any key to continue the simulation without consider vehicles associated with those zones. 

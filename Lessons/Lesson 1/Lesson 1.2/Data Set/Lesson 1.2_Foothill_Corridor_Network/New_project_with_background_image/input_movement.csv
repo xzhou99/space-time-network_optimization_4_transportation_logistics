@@ -1,0 +1,6 @@
+node_id,up_node_id,dest_node_id,name,turn_type,turn_direction,prohibited_flag,
+2,7,3, ,Through,EBT,0,
+3,2,4, ,Through,SBT,0,
+4,3,5, ,Through,SBT,0,
+5,4,6, ,Through,SBT,0,
+7,1,2, ,Through,EBT,0,

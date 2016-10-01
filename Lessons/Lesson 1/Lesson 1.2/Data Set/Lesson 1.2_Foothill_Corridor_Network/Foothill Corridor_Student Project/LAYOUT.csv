@@ -1,0 +1,7 @@
+Layout Data,,,,,,,,,,,,
+INTID,INTNAME,TYPE,X,Y,NID,SID,EID,WID,NNAME,SNAME,ENAME,WNAME
+1,External #1,1,1857339,861336,,,,7381,,,,Wakara
+2,External #2,1,1854618,858956,7381,,,,Foothill,,,
+3,External #3,1,1851885,861370,,,7381,,,,Wakara,
+4,External #4,1,1854625,863756,,7381,,,,Foothill,,
+7381,Wakara & Foothill,0,1854612,861356,4,2,1,3,Foothill,Foothill,Wakara,Wakara
