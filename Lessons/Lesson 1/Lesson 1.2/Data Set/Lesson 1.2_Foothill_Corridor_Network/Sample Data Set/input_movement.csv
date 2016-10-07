@@ -1,0 +1,5 @@
+node_id,up_node_id,dest_node_id,name,turn_type,turn_direction,prohibited_flag,
+3,1,2, ,Right,NBR,0,
+3,1,4, ,Right,NBR,0,
+4,1,2, ,Left,EBL,0,
+4,3,2, ,Left,SBL,0,

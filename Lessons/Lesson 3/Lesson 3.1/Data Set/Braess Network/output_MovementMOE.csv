@@ -1,0 +1,1 @@
+node_id,incoming_link_from_node_id,outgoing_link_to_node_id,turning_direction,movement_hourly_capacity,total_vehicle_count,avg_vehicle_delay_in_sec 

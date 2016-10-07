@@ -1,0 +1,3 @@
+zone_id,total_production_capacity,total_production,avg_production_distance,total_attraction_capacity,total_attraction,avg_attraction_distance,geometry
+1,0.000000,900,35.781258,0.000000,0,0.000000,"<Polygon><outerBoundaryIs><LinearRing><coordinates>26.368226,28.145937,0.0 29.538290,28.379030,0.0 30.330805,24.602925,0.0 26.508082,24.556306,0.0 26.368226,28.192555,0.0 26.368226,28.145937,0.0"</coordinates></LinearRing></outerBoundaryIs></Polygon>"
+2,0.000000,0,0.000000,0.000000,900,35.781258,"<Polygon><outerBoundaryIs><LinearRing><coordinates>53.546856,29.544494,0.0 56.856775,29.730968,0.0 57.183105,26.933854,0.0 54.572465,26.747379,0.0 54.572465,26.747379,0.0 53.546856,29.544494,0.0"</coordinates></LinearRing></outerBoundaryIs></Polygon>"

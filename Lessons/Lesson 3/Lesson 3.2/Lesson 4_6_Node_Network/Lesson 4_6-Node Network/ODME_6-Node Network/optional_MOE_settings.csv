@@ -1,0 +1,19 @@
+moe_type,moe_group,notes,moe_category_label,cut_off_volume,demand_type,vehicle_type,information_type,from_node_id,mid_node_id,to_node_id,origin_zone_id,destination_zone_id,exclude_link_no,link_list_string,departure_starting_time,departure_ending_time,entrance_starting_time,entrance_ending_time,impact_type
+network,1,,network
+network,2,,sov,,1,
+network,2,,hov,,2,
+network,2,,truck,,3,
+network,2,,intermodal,,4,
+network,3,,passenger_car,,,1
+network,3,,passenger_truck,,,2
+network,3,,light_commercial,,,3
+network,3,,single_unit_long_truck,,,4
+network,3,,combination_long_truck,,,5
+od,4,,OD1,,,,,,,,1,2
+od,4,,OD2,,,,,,,,2,1
+link,5,,link_48_41_ NB freeway,,,,,48,,41,,,,,,,,,
+link,5,,link_39_44_NB freeway,,,,,30,,25,,,,,,,,,
+path_3point,6,,'Path1_Major freeway route, which carries a lot of the damand',,,,,200,41,198,,,,,,,,,
+network_time_dependent,7,,for all demand types,,,,,120,91,162
+link_critical,8,,critical link list,1000
+od_critical,9,,critical OD list,50

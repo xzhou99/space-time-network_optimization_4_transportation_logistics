@@ -1,0 +1,5 @@
+from_zone_id,to_zone_id,from_node_id,to_node_id
+1,1,1,1
+1,2,1,2
+2,1,2,1
+2,2,2,2

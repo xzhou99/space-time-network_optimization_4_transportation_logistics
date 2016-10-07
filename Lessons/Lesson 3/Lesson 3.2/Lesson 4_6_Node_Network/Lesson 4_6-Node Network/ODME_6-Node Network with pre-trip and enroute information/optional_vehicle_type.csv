@@ -1,0 +1,6 @@
+vehicle_type,vehicle_type_name,percentage_of_age_0,percentage_of_age_5,percentage_of_age_10,percentage_of_age_15
+1,passenger car,25,25,25,25
+2,passenger truck,25,25,25,25
+3,light commercial truck,25,25,25,25
+4,single unit short-haul truck,25,25,25,25
+5,combination long-haul truck,25,25,25,25

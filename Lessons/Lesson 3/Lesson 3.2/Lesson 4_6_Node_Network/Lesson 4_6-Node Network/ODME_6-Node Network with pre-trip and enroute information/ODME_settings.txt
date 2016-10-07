@@ -1,0 +1,11 @@
+[estimation]
+od_demand_estimation=1
+estimation_start_time_in_min=360.00
+estimation_end_time_in_min=600.00
+measurement_type=1
+adjustment_step_size= 0.05
+weight_on_hist_oddemand= 0.1
+weight_on_ue_gap= 1.00
+starting_iteration=1
+number_of_iterations_per_sequential_adjustment=10
+time_period_in_min_per_sequential_adjustment=60
