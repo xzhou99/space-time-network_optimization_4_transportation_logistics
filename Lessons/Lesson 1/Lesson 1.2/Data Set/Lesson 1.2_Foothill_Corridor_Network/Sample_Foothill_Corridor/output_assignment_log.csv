@@ -1,2 +1,0 @@
-CPU_time,iteration_no,avg_travel_time_in_min,travel_time_index,avg_travel_distance_in_mile,vehicle_route_switching_rate,number_of_vehicles_completing_trips,perc_of_vehicles_completing_trips,avg_travel_time_gap_per_vehicle_in_min,target_demand_deviation,abs_estimation_error_of_link_volume,RMSE_of_est_link_volume,avg_abs_perc_error_of_est_link_volume, 
-CPU Clock: 00:00:00 --,0,2.070,2.694,0.769,100.000,5107,100.000%,0.000,0.000,0.000,0.000,0.000

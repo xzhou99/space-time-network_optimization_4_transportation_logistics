@@ -1,5 +1,0 @@
-name,node_id,control_type,control_type_name,cycle_length_in_second,x,y,geometry
-,1,0,unknown_control,0,27.613539,26.820908,"<Point><coordinates>27.613539,26.820908</coordinates></Point>"
-,2,0,unknown_control,0,55.891174,28.320480,"<Point><coordinates>55.891174,28.320480</coordinates></Point>"
-,3,0,unknown_control,0,39.074550,39.353042,"<Point><coordinates>39.074550,39.353042</coordinates></Point>"
-,4,0,unknown_control,0,43.680377,16.752357,"<Point><coordinates>43.680377,16.752357</coordinates></Point>"

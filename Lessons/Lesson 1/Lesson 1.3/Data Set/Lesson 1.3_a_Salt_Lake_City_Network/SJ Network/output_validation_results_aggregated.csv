@@ -1,1 +1,0 @@
-from_node_id,to_node_id,name,link_type_name,observed_link_count,simulated_link_count,start_time_in_min,end_time_in_min,sensor_type,aggregation_interval,start_time_in_hour,end_time_in_hour,reference_avg_speed,reference_from_node_id,reference_to_node_id,reference_matching_distance,

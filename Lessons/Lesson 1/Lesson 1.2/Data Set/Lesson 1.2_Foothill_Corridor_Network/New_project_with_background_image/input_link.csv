@@ -1,7 +1,0 @@
-name,link_id,from_node_id,to_node_id,direction,length,number_of_lanes,speed_limit,lane_cap,link_type,link_type_name,jam_density,wave_speed,demand_type_code,count_sensor_id,speed_sensor_id,geometry,
-,0,7,2,1,0.00285,1,65.0000,1900.0000,1,Freeway,180.0,12.0,,,"","<LineString><coordinates>-111.838238,40.758368,0.0 -111.835577,40.757351,0.0</coordinates></LineString>",
-,0,2,3,1,0.00825,1,65.0000,1900.0000,1,Freeway,180.0,12.0,,,"","<LineString><coordinates>-111.835577,40.757351,0.0 -111.830491,40.750856,0.0</coordinates></LineString>",
-,0,3,4,1,0.00516,1,65.0000,1900.0000,1,Freeway,180.0,12.0,,,"","<LineString><coordinates>-111.830491,40.750856,0.0 -111.830413,40.745692,0.0</coordinates></LineString>",
-,0,4,5,1,0.00522,1,65.0000,1900.0000,1,Freeway,180.0,12.0,,,"","<LineString><coordinates>-111.830413,40.745692,0.0 -111.827049,40.741702,0.0</coordinates></LineString>",
-,0,5,6,1,0.01039,1,65.0000,1900.0000,1,Freeway,180.0,12.0,,,"","<LineString><coordinates>-111.827049,40.741702,0.0 -111.820398,40.733720,0.0</coordinates></LineString>",
-,0,1,7,1,0.00696,1,65.0000,1900.0000,1,Freeway,180.0,12.0,,,"","<LineString><coordinates>-111.845202,40.758446,0.0 -111.838238,40.758368,0.0</coordinates></LineString>",

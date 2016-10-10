@@ -1,2 +1,0 @@
-    node_id 1 in input_activity_location.csv has no incoming link, which should not defined as a destination activity node. please set external_od_flag = 1 for node_id 1
-node_id 2 in input_activity_location.csv has no outgoing link, which should not defined as an origin activity node. please set external_od_flag = -1 for node_id 2
