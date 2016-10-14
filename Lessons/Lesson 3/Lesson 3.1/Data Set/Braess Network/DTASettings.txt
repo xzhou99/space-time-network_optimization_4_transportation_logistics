@@ -32,11 +32,17 @@ departure_time_choice_late_delay_penalty= 1.31
 learning_percentage=15
 travel_time_difference_for_switching_in_min= 1.00
 relative_travel_time_difference_in_percentage_for_switching_in_percentage=15.00
+use_link_travel_time_from_external_input=0
+use_link_travel_time_from_external_input_gain_factor= 0.50
 [estimation]
 updated_demand_print_out_threshold= 5.00
 [output]
 start_iteration_for_MOE=-1
 simulation_data_horizon_in_min=1200
+TDLinkMOE_aggregation_time_interval_in_min=1
+time_dependent_RoutingPolicy_file=0
+time_dependent_ODMOE_file=0
+time_dependent_skim_aggregation_time_interval_in_min=30
 [traveler_information]
 coefficient_of_variation_of_historical_info_travelers_perception_error= 0.30
 coefficient_of_variation_of_pretrip_info_travelers_perception_error= 0.05
@@ -60,6 +66,8 @@ RT_Output_LinkMOE_Frequency_in_Seconds=0
 RT_Output_TDODMOE_in_Seconds=0
 RT_Output_Complete_Agent_Frequency_in_Seconds=0
 RT_Output_Tagged_Agent_Frequency_in_Seconds=0
+day_by_day_output=0
+day_by_day_output_starting_iteration=100
 [skim_output]
 '00:00=1
 '00:15=1
@@ -93,3 +101,6 @@ RT_Output_Tagged_Agent_Frequency_in_Seconds=0
 '07:15=1
 '07:30=1
 '07:45=1
+[computation]
+max_number_of_threads_for_real_time_routing=1
+max_number_of_threads_to_be_used=8

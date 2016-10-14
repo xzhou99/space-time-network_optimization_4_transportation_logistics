@@ -1,13 +1,13 @@
-link_type,link_type_name,type_code,default_lane_capacity,default_speed_limit,default_number_of_lanes
-1,Freeway,f,1800.000000,65.00,3
-2,Highway/Expressway,h,1450.000000,50.00,3
-3,Principal?arterial,a,1000.000000,40.00,3
-4,Major arterial,a,900.000000,35.00,3
-5,Minor arterial,a,850.000000,30.00,2
-6,Collector,a,650.000000,25.00,1
-7,Local,a,600.000000,20.00,1
-8,Frontage road,a,1000.000000,45.00,2
-9,Ramp,r,1300.000000,30.00,2
-10,Zonal connector,c,2000.000000,100.00,2
-100,Transit link,t,1000.000000,40.00,1
-200,Walking link,w,1000.000000,5.00,1
+link_type,link_type_name,type_code,default_lane_capacity,default_speed_limit,default_number_of_lanes,travel_time_bias_factor
+1,Freeway,f,1800.000000,0,0.0000,1.0000
+2,Highway/Expressway,h,1450.000000,0,0.0000,1.0000
+3,Principal?arterial,a,1000.000000,0,0.0000,1.0000
+4,Major arterial,a,900.000000,0,0.0000,1.0000
+5,Minor arterial,a,850.000000,0,0.0000,1.0000
+6,Collector,a,650.000000,0,0.0000,1.0000
+7,Local,a,600.000000,0,0.0000,1.0000
+8,Frontage road,a,1000.000000,0,0.0000,1.0000
+9,Ramp,r,1300.000000,0,0.0000,1.0000
+10,Zonal connector,c,2000.000000,0,0.0000,1.0000
+100,Transit link,t,1000.000000,0,0.0000,1.0000
+200,Walking link,w,1000.000000,0,0.0000,1.0000
