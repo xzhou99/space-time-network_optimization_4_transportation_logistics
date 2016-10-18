@@ -2,7 +2,7 @@ DTALite:
 A Fast Open Source DTA Engine
 Software Version =,1.1.0
 Release Date=,May  4 2016
-Simulation Date =,year: 2016,month:10,day:14,hour:12,min: 7
+Simulation Date =,year: 2016,month:10,day:14,hour:14,min:16
 ----------------------test1----------------------
 Signal Control Representation =,Continuous Flow with Link Capacity Constraint
 Traffic Flow Model =,Point Queue Model

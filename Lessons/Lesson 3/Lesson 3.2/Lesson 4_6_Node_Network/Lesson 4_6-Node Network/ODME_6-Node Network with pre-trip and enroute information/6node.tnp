@@ -1,7 +1,7 @@
 This project includes input_node.csv and input_link.csv.
 [GUI]
 node_display_size=794.968201
-node_text_display_ratio=4.000000
+node_text_display_ratio=4.00000
 load_movement_data=1
 [Version]
 1.0=50.000000
