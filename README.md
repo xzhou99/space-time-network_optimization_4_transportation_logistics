@@ -24,6 +24,8 @@ Learning Objectives:
 
 3. Understand how basic network attributes affect traffic simulation results.
 
+![Lesson 1_1](http://F:\HTML\Lesson 1.1\Lesson 1_1.jpg)
+
 
 Lesson 1.2 --> Create a Network from Scratch and Run Dynamic Traffic Assignment.    
 
