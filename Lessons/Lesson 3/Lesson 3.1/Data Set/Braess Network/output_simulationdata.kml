@@ -205,21 +205,6 @@
 </SchemaData></ExtendedData>
 <LineString><coordinates></coordinates></LineString>
 </Placemark>
-<Placemark id="Link5">
-<name>Link (null)</name>
-<ExtendedData><SchemaData schemaUrl="#link">
-<SimpleData name="from_node_id">3</SimpleData>
-<SimpleData name="to_node_id">4</SimpleData>
-<SimpleData name="link_id">5</SimpleData>
-<SimpleData name="link_length_"> 0.11</SimpleData>
-<SimpleData name="number_of_lanes">3</SimpleData>
-<SimpleData name="speed_limit_mph">65.00</SimpleData>
-<SimpleData name="capacity_per_lane_per_hour">1900.00</SimpleData>
-<SimpleData name="capacity_per_link_per_hour">5700.00</SimpleData>
-<SimpleData name="free_flow_travel_time_(min)"> 0.10</SimpleData>
-</SchemaData></ExtendedData>
-<LineString><coordinates></coordinates></LineString>
-</Placemark>
 </Folder>
 <Folder><name>Zone Layer</name> 
 <Placemark id="Zone_1">
