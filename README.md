@@ -13,6 +13,12 @@ Lesson 1 --> Learning Transportation Network Analysis
 This lesson is divided into following three parts:
 
 Lesson 1.1 --> Introduction with the West Jordan Network
+Link: https://github.com/xzhou99/learning-transportation/tree/master/Lessons/Lesson%201/Lesson%201.1
+
+Learning Objectives:
+1. Understand how to view/edit network attributes in NeXTA and GIS
+2. Run a basic traffic simulation, comparing two different scenarios
+3. Understand how basic network attributes affect traffic simulation results
 
 Lesson 1.2 --> Create a Network from Scratch and Run Dynamic Traffic Assignment.
 
