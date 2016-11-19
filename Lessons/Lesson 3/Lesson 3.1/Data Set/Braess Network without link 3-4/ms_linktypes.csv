@@ -1,0 +1,13 @@
+linktype_no,name,drivingbehavior
+1,freeway,Urban
+2,highway,Urban
+3,arterial,Urban
+4,arterial,Urban
+5,arterial,Urban
+6,collector,Urban
+7,local,Urban
+8,frontage_road,Urban
+9,ramp,Urban
+10,connector,Urban
+100,transit,Urban
+200,walking_link,Urban

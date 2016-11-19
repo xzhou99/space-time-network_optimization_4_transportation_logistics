@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Traffic Simulation Data</name>
+<Style id="green">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7d00ff00</color>
+</PolyStyle>
+</Style>
+<Style id="red">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7d0000ff</color>
+</PolyStyle>
+</Style>
+<Style id="blue">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7dff0000</color>
+</PolyStyle>
+</Style>
+<Style id="yellow">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>7d00ffff</color>
+</PolyStyle>
+</Style>
+<Style id="color1">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c00ff00</color>
+</PolyStyle>
+</Style>
+<Style id="color2">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c75faff</color>
+</PolyStyle>
+</Style>
+<Style id="color3">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c00faff</color>
+</PolyStyle>
+</Style>
+<Style id="color4">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c00d8ff</color>
+</PolyStyle>
+</Style>
+<Style id="color5">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c0099ff</color>
+</PolyStyle>
+</Style>
+<Style id="color6">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+ <color>4c0000ff</color>
+</PolyStyle>
+</Style>
+<Style id="no_control_node">
+<BalloonStyle>
+<displayMode>hide</displayMode>
+</BalloonStyle>
+</Style><Style id="signal_node">      <IconStyle>        <Icon>          <href>http://maps.google.com/mapfiles/kml/paddle/red-stars.png</href>        </Icon>      </IconStyle>    </Style><Folder><name>Node Layer</name> 
+		<visibility>0</visibility>
+<Schema name="node" id="node">
+<SimpleField name="Description" type="string"></SimpleField>
+<SimpleField name="Name" type="string"></SimpleField>
+<SimpleField name="node_id" type="int"></SimpleField>
+<SimpleField name="control_type" type="string"></SimpleField>
+</Schema>
+<Placemark id="Node1">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 1</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">1</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>0.000000,0.000000</coordinates></Point>
+</Placemark>
+<Placemark id="Node2">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 2</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">2</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>1.831400,0.000000</coordinates></Point>
+</Placemark>
+<Placemark id="Node3">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 3</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">3</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>0.000000,3.662800</coordinates></Point>
+</Placemark>
+<Placemark id="Node4">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 4</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">4</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>1.831400,3.662800</coordinates></Point>
+</Placemark>
+<Placemark id="Node5">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 5</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">5</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>0.915700,0.915700</coordinates></Point>
+</Placemark>
+<Placemark id="Node6">
+		<styleUrl>#no_control_node</styleUrl>
+<name>Node 6</name>
+<ExtendedData><SchemaData schemaUrl="#node">
+<SimpleData name="node_id">6</SimpleData>
+<SimpleData name="control_type">unknown_control</SimpleData>
+</SchemaData></ExtendedData>
+<Point><coordinates>0.915700,2.747100</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder><name>Link Layer</name> 
+<Schema name="link" id="link">
+<SimpleField name="Description" type="string"></SimpleField>
+<SimpleField name="Name" type="string"></SimpleField>
+<SimpleField name="from_node_id" type="int"></SimpleField>
+<SimpleField name="to_node_id" type="int"></SimpleField>
+<SimpleField name="link_id" type="int"></SimpleField>
+<SimpleField name="link_length" type="float"></SimpleField>
+<SimpleField name="number_of_lanes" type="int"></SimpleField>
+<SimpleField name="speed_limit_mph" type="float"></SimpleField>
+<SimpleField name="capacity_per_lane_per_hour" type="float"></SimpleField>
+<SimpleField name="capacity_per_link_per_hour" type="float"></SimpleField>
+<SimpleField name="free_flow_travel_time_(min)" type="float"></SimpleField>
+</Schema>
+<Placemark id="Link1">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">1</SimpleData>
+<SimpleData name="to_node_id">2</SimpleData>
+<SimpleData name="link_id">1</SimpleData>
+<SimpleData name="link_length_"> 2.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 3.43</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link2">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">1</SimpleData>
+<SimpleData name="to_node_id">3</SimpleData>
+<SimpleData name="link_id">2</SimpleData>
+<SimpleData name="link_length_"> 4.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">45.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 5.33</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link3">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">1</SimpleData>
+<SimpleData name="to_node_id">5</SimpleData>
+<SimpleData name="link_id">3</SimpleData>
+<SimpleData name="link_length_"> 1.00</SimpleData>
+<SimpleData name="number_of_lanes">4</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">7200.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.71</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link4">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">2</SimpleData>
+<SimpleData name="to_node_id">1</SimpleData>
+<SimpleData name="link_id">4</SimpleData>
+<SimpleData name="link_length_"> 2.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 3.43</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link5">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">2</SimpleData>
+<SimpleData name="to_node_id">4</SimpleData>
+<SimpleData name="link_id">5</SimpleData>
+<SimpleData name="link_length_"> 4.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">45.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 5.33</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link6">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">2</SimpleData>
+<SimpleData name="to_node_id">5</SimpleData>
+<SimpleData name="link_id">6</SimpleData>
+<SimpleData name="link_length_"> 1.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.71</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link7">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">3</SimpleData>
+<SimpleData name="to_node_id">1</SimpleData>
+<SimpleData name="link_id">7</SimpleData>
+<SimpleData name="link_length_"> 4.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">45.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 5.33</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link8">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">3</SimpleData>
+<SimpleData name="to_node_id">4</SimpleData>
+<SimpleData name="link_id">8</SimpleData>
+<SimpleData name="link_length_"> 2.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 3.43</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link9">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">3</SimpleData>
+<SimpleData name="to_node_id">6</SimpleData>
+<SimpleData name="link_id">9</SimpleData>
+<SimpleData name="link_length_"> 1.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.71</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link10">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">4</SimpleData>
+<SimpleData name="to_node_id">2</SimpleData>
+<SimpleData name="link_id">10</SimpleData>
+<SimpleData name="link_length_"> 4.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">45.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 5.33</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link11">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">4</SimpleData>
+<SimpleData name="to_node_id">3</SimpleData>
+<SimpleData name="link_id">11</SimpleData>
+<SimpleData name="link_length_"> 2.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 3.43</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link12">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">5</SimpleData>
+<SimpleData name="to_node_id">1</SimpleData>
+<SimpleData name="link_id">12</SimpleData>
+<SimpleData name="link_length_"> 1.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.71</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link13">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">5</SimpleData>
+<SimpleData name="to_node_id">2</SimpleData>
+<SimpleData name="link_id">13</SimpleData>
+<SimpleData name="link_length_"> 1.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.71</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link14">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">5</SimpleData>
+<SimpleData name="to_node_id">6</SimpleData>
+<SimpleData name="link_id">14</SimpleData>
+<SimpleData name="link_length_"> 2.00</SimpleData>
+<SimpleData name="number_of_lanes">6</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">10800.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.85</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link15">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">6</SimpleData>
+<SimpleData name="to_node_id">3</SimpleData>
+<SimpleData name="link_id">15</SimpleData>
+<SimpleData name="link_length_"> 1.00</SimpleData>
+<SimpleData name="number_of_lanes">2</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">3600.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.71</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link16">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">6</SimpleData>
+<SimpleData name="to_node_id">4</SimpleData>
+<SimpleData name="link_id">16</SimpleData>
+<SimpleData name="link_length_"> 1.00</SimpleData>
+<SimpleData name="number_of_lanes">4</SimpleData>
+<SimpleData name="speed_limit_mph">35.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">7200.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.71</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+<Placemark id="Link17">
+<name>Link (null)</name>
+<ExtendedData><SchemaData schemaUrl="#link">
+<SimpleData name="from_node_id">6</SimpleData>
+<SimpleData name="to_node_id">5</SimpleData>
+<SimpleData name="link_id">17</SimpleData>
+<SimpleData name="link_length_"> 2.00</SimpleData>
+<SimpleData name="number_of_lanes">3</SimpleData>
+<SimpleData name="speed_limit_mph">65.00</SimpleData>
+<SimpleData name="capacity_per_lane_per_hour">1800.00</SimpleData>
+<SimpleData name="capacity_per_link_per_hour">5400.00</SimpleData>
+<SimpleData name="free_flow_travel_time_(min)"> 1.85</SimpleData>
+</SchemaData></ExtendedData>
+<LineString><coordinates></coordinates></LineString>
+</Placemark>
+</Folder>
+<Folder><name>Zone Layer</name> 
+<Placemark id="Zone_1">
+		<name>Zone 1</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_2">
+		<name>Zone 2</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_3">
+		<name>Zone 3</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+<Placemark id="Zone_4">
+		<name>Zone 4</name>
+		<visibility>0</visibility>
+		<styleUrl>#yellow</styleUrl>
+		<Polygon>
+		<extrude>1</extrude>
+		<altitudeMode>relativeToGround</altitudeMode>
+		<outerBoundaryIs>
+		<LinearRing>
+		<coordinates>
+		</coordinates>
+		</LinearRing>
+		</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Folder>
+<Folder><name>Work Zone Layer</name> 
+</Folder>
+<Folder><name>Variable Message Sign</name> 
+</Folder>
+<Folder><name>Traffic Detector</name> 
+</Folder>
+<Folder><name>Node Bottleneck</name> 
+<Placemark id="Bottleneck 2 ">
+<name>Bottleneck 2 </name><description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p&amp;chd=t:<description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p3&amp;chd=t:0.000000,0.000000,1.886760&amp;chs=500x150&amp;chf=bg,s,ffffff00&amp;chco=FF7800&amp;chl=(null):%200.0(hr)%7C(null):%200.0(hr)%7C(null):%201.9(hr)'>]]></description><LookAt><longitude>1.831400</longitude>
+<latitude>0.000000</latitude>
+<altitude>0</altitude>
+<range>3200000</range>
+<tilt>0</tilt>			<heading>0</heading>		</LookAt>		<Style>			<IconStyle>				<scale>2.17107</scale>				<Icon><href>http://chart.apis.google.com/chart?cht=p&amp;chd=t:0.000000,0.000000,1.886760&amp;chs=78x78&amp;chf=bg,s,ffffff00&amp;chco=FF7800</href>				</Icon>			</IconStyle>			</Style>		<Point>
+<coordinates>1.831400,0.000000,0</coordinates>
+</Point>
+</Placemark><Placemark id="Bottleneck 3 ">
+<name>Bottleneck 3 </name><description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p&amp;chd=t:<description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p3&amp;chd=t:0.000000,0.000000,1.557235&amp;chs=500x150&amp;chf=bg,s,ffffff00&amp;chco=FF7800&amp;chl=(null):%200.0(hr)%7C(null):%200.0(hr)%7C(null):%201.6(hr)'>]]></description><LookAt><longitude>0.000000</longitude>
+<latitude>3.662800</latitude>
+<altitude>0</altitude>
+<range>3200000</range>
+<tilt>0</tilt>			<heading>0</heading>		</LookAt>		<Style>			<IconStyle>				<scale>2.17107</scale>				<Icon><href>http://chart.apis.google.com/chart?cht=p&amp;chd=t:0.000000,0.000000,1.557235&amp;chs=64x64&amp;chf=bg,s,ffffff00&amp;chco=FF7800</href>				</Icon>			</IconStyle>			</Style>		<Point>
+<coordinates>0.000000,3.662800,0</coordinates>
+</Point>
+</Placemark><Placemark id="Bottleneck 4 ">
+<name>Bottleneck 4 </name><description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p&amp;chd=t:<description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p3&amp;chd=t:0.033977,0.033687,4.732482&amp;chs=500x150&amp;chf=bg,s,ffffff00&amp;chco=FF7800&amp;chl=(null):%200.0(hr)%7C(null):%200.0(hr)%7C(null):%204.7(hr)'>]]></description><LookAt><longitude>1.831400</longitude>
+<latitude>3.662800</latitude>
+<altitude>0</altitude>
+<range>3200000</range>
+<tilt>0</tilt>			<heading>0</heading>		</LookAt>		<Style>			<IconStyle>				<scale>2.17107</scale>				<Icon><href>http://chart.apis.google.com/chart?cht=p&amp;chd=t:0.033977,0.033687,4.732482&amp;chs=200x200&amp;chf=bg,s,ffffff00&amp;chco=FF7800</href>				</Icon>			</IconStyle>			</Style>		<Point>
+<coordinates>1.831400,3.662800,0</coordinates>
+</Point>
+</Placemark><Placemark id="Bottleneck 5 ">
+<name>Bottleneck 5 </name><description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p&amp;chd=t:<description><![CDATA[<img src='http://chart.apis.google.com/chart?cht=p3&amp;chd=t:3.368275,0.000000,0.000000&amp;chs=500x150&amp;chf=bg,s,ffffff00&amp;chco=FF7800&amp;chl=(null):%203.4(hr)%7C(null):%200.0(hr)%7C(null):%200.0(hr)'>]]></description><LookAt><longitude>0.915700</longitude>
+<latitude>0.915700</latitude>
+<altitude>0</altitude>
+<range>3200000</range>
+<tilt>0</tilt>			<heading>0</heading>		</LookAt>		<Style>			<IconStyle>				<scale>2.17107</scale>				<Icon><href>http://chart.apis.google.com/chart?cht=p&amp;chd=t:3.368275,0.000000,0.000000&amp;chs=140x140&amp;chf=bg,s,ffffff00&amp;chco=FF7800</href>				</Icon>			</IconStyle>			</Style>		<Point>
+<coordinates>0.915700,0.915700,0</coordinates>
+</Point>
+</Placemark></Folder>
+<Folder>
+<name>Link MOE Layer</name>
+ <visibility>0</visibility>
+<ScreenOverlay>
+<name>Speed Legend Logo</name>
+<drawOrder>20000001</drawOrder>
+ <Icon>
+<href>legend_link_speed.png</href>
+ </Icon>
+<overlayXY x="1.0" y="0.0" xunits="fraction" yunits="fraction"/>
+<screenXY x="0.2" y="0.05" xunits="fraction" yunits="fraction"/>
+ </ScreenOverlay>
+</Folder>
+<Folder>
+<name>Impacted Volume Layer</name>
+ <visibility>0</visibility>
+</Folder>
+<Folder><name>Summary</name> 
+		<visibility>1</visibility>
+<ScreenOverlay>
+<name>Logo</name>
+<drawOrder>20000000</drawOrder>
+ <Icon>
+<href>Logo.png</href>
+ </Icon>
+<overlayXY x="1.0" y="0.0" xunits="fraction" yunits="fraction"/>
+<screenXY x="0.8" y="0.05" xunits="fraction" yunits="fraction"/>
+ </ScreenOverlay>
+</Folder>
+</Document>
+</kml>

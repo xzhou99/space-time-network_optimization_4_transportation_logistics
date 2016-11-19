@@ -1,3 +1,0 @@
-zone_id,production,attraction,origin_num_of_veh,origin_avg_distance,destination_num_of_veh,destination_avg_distance,color_code,height,notes,geometry
-1,0.000000,0.000000,8000,31.179344,0,0.000000,red,0.000000,,"<Polygon><outerBoundaryIs><LinearRing><coordinates>"</coordinates></LinearRing></outerBoundaryIs></Polygon>"
-2,0.000000,0.000000,0,0.000000,8000,31.179344,red,0.000000,,"<Polygon><outerBoundaryIs><LinearRing><coordinates>"</coordinates></LinearRing></outerBoundaryIs></Polygon>"

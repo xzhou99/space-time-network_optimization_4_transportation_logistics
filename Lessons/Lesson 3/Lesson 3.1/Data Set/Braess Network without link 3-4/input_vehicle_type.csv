@@ -1,0 +1,6 @@
+vehicle_type,vehicle_type_name,rolling_term_a,rotating_term_b,drag_term_c,source_mass,percentage_of_age_0,percentage_of_age_5,percentage_of_age_10,percentage_of_age_15
+1,passenger car,0.156461,0.00200193,0.000492646,1.4788,5.9059,47.9479,28.3283,17.8179
+2,passenger truck,0.22112,0.00283757,0.000698282,1.86686,2.9949,43.372,26.3805,27.2526
+3,light commercial truck,0.235008,0.00303859,0.000747753,2.05979,3.0918,44.2272,25.9693,26.7117
+4,single unit short-haul truck,0.561933,0,0.00160302,7.64159,3.994,51.9218,23.4647,20.6195
+5,combination long-haul truck,2.08126,0,0.00418844,31.4038,3.9991,51.9888,23.495,20.5171

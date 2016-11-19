@@ -1,2 +1,0 @@
-from_zone_id,to_zone_id,number_of_agents,number_of_agents_completing_trips,trip_time_in_min,distance
-1,4,8000,8000,38.3655,4

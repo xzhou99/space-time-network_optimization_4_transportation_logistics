@@ -1,0 +1,2 @@
+control_type_name,unknown_control,no_control,yield_sign,2way_stop_sign,4way_stop_sign,pretimed_signal,actuated_signal,roundabout
+control_type,0,1,2,3,4,5,6,100
