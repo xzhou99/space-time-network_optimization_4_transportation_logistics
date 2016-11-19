@@ -39,7 +39,7 @@ Learning Objectives:
 
 3. A large number of MOEs available for comparing scenarios
 
-![Lesson 1_2](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%201_1.jpg)
+![Lesson 1_2](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%201_2.PNG)
 
 
 Lesson 1.3 --> GIS Importing Document
@@ -48,7 +48,7 @@ Link: https://github.com/xzhou99/learning-transportation/tree/master/Lessons/Les
 
 Learning Objective:  Importing GIS Network data into NeXTA.
 
-![Lesson 1_3](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%201_1.jpg)
+![Lesson 1_3](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%201_3.png)
 
 
 Lesson 2 --> Traffic Congestion Propogation: Understanding Bheoretical Basics of Dynamic Traffic Network Assignment and Simulation.
@@ -63,7 +63,7 @@ Learning Objectives:
 
 3. Calculate traffic states through different computational approaches.
 
-![Lesson 2](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%201_1.jpg)
+![Lesson 2](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%202.jpg)
 
 
 Lesson 3 --> Network Modeling
@@ -87,7 +87,7 @@ Learning Objectives:
 
 6. Understand the impact of road pricing on Braess paradox and how to resolve Braess’ Paradox
 
-![Lesson 3_1](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%201_1.jpg)
+![Lesson 3_1](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%203_1.PNG)
 
 
 Lesson 3.2 --> Route Choice Behavior: Modeling Considering Traveler Information Provision.
@@ -102,7 +102,7 @@ Learning Objectives:
 
 3. Understand how to evaluate the route choice effects of VMS & traveler information in NeXTA
 
-![Lesson 3_2](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%201_1.jpg)
+![Lesson 3_2](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%203_2.png)
 
 
 The other lessons will soon be added. 
