@@ -12,17 +12,31 @@ These learning documents can be found in the lessons folder on the homepage of l
 Lesson 1 --> Learning Transportation Network Analysis
 This lesson is divided into following three parts:
 
-Lesson 1.1 --> Introduction with the West Jordan Network
+Lesson 1.1 --> Introduction with the West Jordan Network  
+    
 Link: https://github.com/xzhou99/learning-transportation/tree/master/Lessons/Lesson%201/Lesson%201.1
 
-Learning Objectives:
+Learning Objectives:  
+ 
 1. Understand how to view/edit network attributes in NeXTA and GIS.
+
 2. Run a basic simulation, comparing two different scenarios.
+
 3. Understand how basic network attributes affect traffic simulation results.
 
-<center>img src="Lesson 1_1.jpg" /></center> 
 
-Lesson 1.2 --> Create a Network from Scratch and Run Dynamic Traffic Assignment.
+Lesson 1.2 --> Create a Network from Scratch and Run Dynamic Traffic Assignment.    
+
+Link: https://github.com/xzhou99/learning-transportation/tree/master/Lessons/Lesson%201/Lesson%201.2
+
+Learning Objectives:
+
+1. Path travel time is the sum of link travel time along routes
+
+2. Signal timing could lead to time-dependent traffic delay
+
+3. A large number of MOEs available for comparing scenarios
+
 
 Lesson 1.3 --> GIS Importing Document
 
