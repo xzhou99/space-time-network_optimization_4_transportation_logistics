@@ -15,7 +15,7 @@ arcs('1','2') = 1;
  arcs('1','3') = 1;
 arcs('2','3') = 1;
 
-travel_cost('1','2') = 1;
+travel_cost('1','2') = 6;
 travel_cost('1','3') = 4;travel_cost('2','3') = 2;
 * OD
 origin('1') =1;
