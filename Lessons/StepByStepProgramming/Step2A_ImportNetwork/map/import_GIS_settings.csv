@@ -1,0 +1,38 @@
+section,key,value,required_or_optional,allowed_values,notes
+file_name,node,,desired,,if no node layer is provided
+file_name,link,lines.shp,required,,this is the required data layer 
+file_name,zone,,desired,,if no zone layer is provided
+configuration,with_decimal_long_lat,yes,,yes;no,
+node,node_id,,required when node file is provided,,
+node,name,,,,for display only
+node,TAZ,,desired,,if no TAZ id is provided
+node,control_type,,,,used only when users have signal control type already
+configuration,node_number_threshold_as_centroid,0,,default 0,
+link,from_node_id,,desired,,if from_node_id is empty
+link,to_node_id,,desired,,if to_node_id is empty
+link,name,name,,,for display only
+link,link_id,osm_id,,,
+link,link_type,,,,default value = 1
+link,mode_code,,,,reserved for transit modeling
+link,direction,,,,two comments here: if direction field is not available
+link,length,,desired,,if data is available
+link,number_of_lanes,,desired,,users can specify use_default_number_of_lanes_from_link_type based on link type
+link,hourly_capacity,,desired,,users can specify use_default_lane_capacity_from_link_type based on link type
+link,speed_limit,,desired,,users can specify use_default_speed_limit_from_link_type based on link type
+link,r_number_of_lanes,,,,used only when data for reserved links are given
+link,r_hourly_capacity,,,,
+link,r_speed_limit,,,,
+link,r_link_type,,,,
+configuration,identify_from_node_id_and_to_node_id_based_on_geometry,yes,,yes;no,
+configuration,number_of_lanes_oneway_vs_twoway,oneway,,oneway;twoway,
+configuration,lane_capacity_vs_link_capacity,lane,,lane;link,
+configuration,direction_0_as_oneway_vs_twoway,oneway,,oneway;twoway,
+configuration,default_link_direction,twoway,,oneway;twoway,
+configuration,use_default_speed_limit_from_link_type,yes,,yes;no,
+configuration,use_default_lane_capacity_from_link_type,yes,,yes;no,
+configuration,use_default_number_of_lanes_from_link_type,yes,,yes;no,
+configuration,minimum_length_for_importing_links,0.00001,,,
+zone,zone_id,Id,desired,,required only if zone file is given in section file_name
+[movement],,,,,
+prohibit_non_specified_movement_on_freeway_and_ramp=1.00000
+hide_non_specified_movement_on_freeway_and_ramp=1.00000

@@ -1,0 +1,13 @@
+Warning 1: Value '"addr:city"=>"Tempe","addr:housenumber"=>"21","addr:postcode"=>"85281","addr:state"=>"AZ","addr:street"=>"East 6th Street","description"=>"Suite 408","office"=>"company","opening_hours"=>"Mo-Fr 09:00-17:00","phone"=>"+1-480-664-1542","website"=>"http://www.etcgrp.com/"' of field other_tags has been truncated to 254 characters.
+This warning will not be emitted any more for that layer.
+Warning 1: Value '"bicycle"=>"yes","cycleway"=>"no","lanes"=>"3","lit"=>"yes","maxspeed"=>"30 mph","note:lanes"=>"1 northbound, 3 southbound","old_ref"=>"US 60; US 70; US 80; US 89","oneway"=>"yes","surface"=>"asphalt","tiger:county"=>"Maricopa, AZ","turn:lanes"=>"through||through"' of field other_tags has been truncated to 254 characters.
+This warning will not be emitted any more for that layer.
+Warning 1: Value '"colour"=>"#89728E","description"=>"The Valley Metro Light rail runs through the heart of Phoenix reaching both Tempe and Mesa.","from"=>"Dunlap Road and 19th Avenue","network"=>"Light Rail","operator"=>"Valley Metro","ref"=>"VMLR","route"=>"light_rail","to"=>"Mesa Drive and Main Street"' of field other_tags has been truncated to 254 characters.
+This warning will not be emitted any more for that layer.
+Warning 6: Normalized/laundered field name: 'admin_level' to 'admin_leve'
+Warning 1: Value '"addr:city"=>"Tempe","addr:housenumber"=>"1125","addr:postcode"=>"AZ 85281","addr:street"=>"East Rio Salado Parkway","description"=>"18 hole Par 72","golf:course"=>"18_hole","golf:par"=>"72","operator"=>"Arizona State University","phone"=>"(480) 921-8070","website"=>"http://asukarsten.com/","wikidata"=>"Q6373438"' of field other_tags has been truncated to 254 characters.
+This warning will not be emitted any more for that layer.
+ERROR 6: Geometry type of `Geometry Collection' not supported in shapefiles.
+Type can be overridden with a layer creation option
+of SHPT=POINT/ARC/POLYGON/MULTIPOINT/POINTZ/ARCZ/POLYGONZ/MULTIPOINTZ.
+
