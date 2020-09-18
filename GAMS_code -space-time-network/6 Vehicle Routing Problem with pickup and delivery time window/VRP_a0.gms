@@ -1,6 +1,5 @@
 * no fixed sensors, can't stop at intermediate nodes, no budget constraints
 
-opCOINOS;
 
 set k vehicle /1/;
 set p passenger /1*3/;
@@ -168,5 +167,6 @@ flow_on_node_intermediate(k,i,t,w)$(intermediate_node(k,i,t,w)).. sum((j,s,wp)$(
 
 
 Model customized_bueses_optimization /ALL/;
-
-
+solve customized_bueses_optimization using mip minimizing z;
+display z.l;
+display y.l;
