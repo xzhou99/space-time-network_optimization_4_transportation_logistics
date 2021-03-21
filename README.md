@@ -105,4 +105,24 @@ Learning Objectives:
 ![Lesson 3_2](https://github.com/xzhou99/learning-transportation/blob/master/Images/Lesson%203_2.png)
 
 
-The other lessons will soon be added. 
+Other online github resources:
+https://github.com/xchChen/CACSP_ADMM
+The C# code of multi-robot coordination and scheduling framework using ADMM solution method, a specific case for the crane and AGV coordination and scheudling problem (CACSP) in automated container hub.
+
+
+
+Open-source space-time diagram visualization tool for General Modeling Network Specification (GMNS)
+https://github.com/YXZhangSWJTU/space-time-diagram_gmns
+
+Matlab functions used to perform analyses for DTW vehicle trajectory analysis paper and Master's Thesis
+Taylor, J., Zhou, X., Rouphail, N.M. and Porter, R.J., 2015. Method for investigating intradriver heterogeneity using vehicle trajectory data: A dynamic time warping approach. Transportation Research Part B: Methodological, 73, pp.59-80. https://www.sciencedirect.com/science/article/pii/S0191261514002264
+
+https://github.com/jeff-d-taylor/DTW_Paper_Code
+
+
+Input files for DTW code, derived from NGSIM data set
+https://github.com/jeff-d-taylor/DTW_Vehicle_Trajectory_Data
+https://github.com/jeff-d-taylor/Basic_DTW_Matlab
+
+https://github.com/jiawei92/CAVLite
+
